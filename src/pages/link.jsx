@@ -71,7 +71,10 @@ const Link = () => {
     URL.revokeObjectURL(blobUrl);
   };
 
-  const shortLink = url?.custom_url || url?.short_url;
+   let shortLink = "";
+  if (url) {
+    shortLink = url?.custom_url ? url?.custom_url : url.short_url;
+  }
 
   const isLoading = loadingUrl || loadingStats;
 
@@ -96,13 +99,11 @@ const Link = () => {
               </span>
 
              <a
-                // href={`https://trimrr.in/${shortLink}`}
-                href={`https://trimrr-dun.vercel.app/${shortLink}`}
+                href={`https://trimrr.in/${shortLink}`}
                 target="_blank"
                 className="text-3xl text-blue-400 font-bold hover:underline"
               >
-                {/* https://trimrr.in/{shortLink} */}
-               https://trimrr-dun.vercel.app/{shortLink}
+                https://trimrr.in/{shortLink}
               </a> 
 
               <a

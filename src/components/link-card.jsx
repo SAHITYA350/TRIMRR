@@ -61,16 +61,7 @@ const LinkCard = ({ url, setUrls }) => {
           </h2>
 
           <p className="text-sm sm:text-lg text-blue-400 font-semibold hover:underline break-all">
-            https://trimrr-dun.vercel.app/{url.custom_url || url.short_url}
-            {/* <a
-  href={`https://trimrr-<random>.vercel.app/${url.custom_url || url.short_url}`}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-sm sm:text-lg text-blue-400 font-semibold hover:underline break-all"
->
-  {`https://trimrr-<random>.vercel.app/${url.custom_url || url.short_url}`}
-</a> */}
-
+            https://trimrr.in/{url.custom_url || url.short_url}
           </p>
 
           <p className="flex items-start gap-1 text-xs sm:text-sm text-gray-300 break-all">
