@@ -1,0 +1,15 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+```
+
+This tells Netlify to serve `index.html` for ALL routes, letting React Router handle the navigation.
+
+---
+
+## 🔧 **Step 2: Alternative Method (if you prefer)**
+
+Or, create a file named `_redirects` (no extension) in your `public` folder:
+```
+/*    /index.html   200
